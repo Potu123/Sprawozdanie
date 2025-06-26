@@ -16,8 +16,10 @@ documentation for details.
    :caption: Contents:
 
    rozdzial1/index
-   rozdzial2/sprzet/index
+   rozdzial2/index
    rozdzial3/index
+   rozdzial4/index
+   rozdzial5/index
 
 
 

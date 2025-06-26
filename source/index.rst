@@ -21,5 +21,3 @@ documentation for details.
    rozdzial4/index
    rozdzial5/index
 
-
-

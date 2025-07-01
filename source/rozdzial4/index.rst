@@ -82,7 +82,7 @@ Przykład optymalizacji konkretnego zapytania
     LIMIT 10;  -- jeśli potrzebujemy tylko top 10
 
 Wykorzystanie EXPLAIN w PostgreSQL do analizy wydajności zapytań
-================================================================
+--------------------------------------------------------------------------------
 
 EXPLAIN to podstawowe narzędzie w PostgreSQL do poznania, jak silnik bazodanowy realizuje zapytanie.  
 W wersji z ``ANALYZE`` i ``BUFFERS`` pozwala zmierzyć realne czasy i zużycie I/O.
@@ -203,10 +203,7 @@ Wnioski
 
 
 Analiza i optymalizacja na danych SQLite (SQLite in-memory)
-============================================================
-
-Optymalizacja przykładowych zapytań
------------------------------------
+-------------------------------------------------------------
 
 Przykładowe zapytanie:
 
@@ -305,23 +302,8 @@ Wnioski:
 
 Wprowadzenie indeksów oraz LIMIT istotnie zmniejsza czas wykonania zapytania w SQLite nawet na niewielkiej próbce. Przy większych zbiorach danych efekty te są jeszcze bardziej wyraźne.
 
-Indeksowanie i pomiar wydajności zapytań w PostgreSQL
-======================================================
 
-Tworzenie indeksów
-------------------
 
-Po załadowaniu danych, w celu przyspieszenia zapytań zawierających filtry i JOIN-y, należy dodać indeksy:
-
-.. code-block:: sql
-
-    -- Przyspieszenie filtrów i JOIN-ów na LogAukcji
-    CREATE INDEX idx_log_sprzedawca  ON LogAukcji(sprzedawca);
-    CREATE INDEX idx_log_nabywca     ON LogAukcji(nabywca);
-    CREATE INDEX idx_log_data        ON LogAukcji(data_transakcji);
-
-    -- Kompozytowy indeks dla częstych filtrów po dacie i sprzedawcy
-    CREATE INDEX idx_log_data_sprzed ON LogAukcji(data_transakcji, sprzedawca);
 
 Pomiar wydajności na przykładowym zapytaniu
 -------------------------------------------
@@ -337,10 +319,32 @@ Przykład zapytania:
     GROUP BY k.imie, k.nazwisko
     ORDER BY cnt DESC;
 
-PostgreSQL optymalizacja zapytań
-=================================
+ograniczenie ilości wyników
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. code-block:: sql
+    Limit 10
 
-**1. Pomiar czasu bez LIMIT**
+
+Indeksowanie
+~~~~~~~~~~~~~~
+
+Po załadowaniu danych, w celu przyspieszenia zapytań zawierających filtry i JOIN-y, należy dodać indeksy:
+
+.. code-block:: sql
+
+    -- Przyspieszenie filtrów i JOIN-ów na LogAukcji
+    CREATE INDEX idx_log_sprzedawca  ON LogAukcji(sprzedawca);
+    CREATE INDEX idx_log_nabywca     ON LogAukcji(nabywca);
+    CREATE INDEX idx_log_data        ON LogAukcji(data_transakcji);
+
+    -- Kompozytowy indeks dla częstych filtrów po dacie i sprzedawcy
+    CREATE INDEX idx_log_data_sprzed ON LogAukcji(data_transakcji, sprzedawca);
+
+
+PostgreSQL optymalizacja zapytań
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Pomiar czasu bez LIMIT**
 
 .. code-block:: python
 
@@ -358,7 +362,7 @@ PostgreSQL optymalizacja zapytań
         for row in result:
             print(row[0])
 
-**Wynik:**
+Wynik:
 
 .. code-block:: none
 
@@ -367,7 +371,7 @@ PostgreSQL optymalizacja zapytań
     Planning Time: 0.099 ms
     Execution Time: 0.266 ms
 
-**2. Pomiar z LIMIT 10**
+**Pomiar z LIMIT 10**
 
 .. code-block:: python
 
@@ -386,7 +390,7 @@ PostgreSQL optymalizacja zapytań
         for row in result:
             print(row[0])
 
-**Wynik:**
+Wynik
 
 .. code-block:: none
 
@@ -395,7 +399,7 @@ PostgreSQL optymalizacja zapytań
     Planning Time: 0.169 ms
     Execution Time: 0.478 ms
 
-**3. Pomiar z dodanymi indeksami**
+**Pomiar z dodanymi indeksami**
 
 .. code-block:: python
 
@@ -423,7 +427,7 @@ PostgreSQL optymalizacja zapytań
         for row in result:
             print(row[0])
 
-**Wynik:**
+Wynik:
 
 .. code-block:: none
 

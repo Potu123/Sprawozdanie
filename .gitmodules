@@ -1,0 +1,6 @@
+[submodule "code"]
+	path = code
+	url = git@github.com:Potu123/Kod-pythonowy-.git
+[submodule "source/rozdzial2/Sprzet-Dla-Baz-Danych"]
+	path = source/rozdzial2/Sprzet-Dla-Baz-Danych
+	url = git@github.com:Potu123/Sprzet-Dla-Baz-Danych.git

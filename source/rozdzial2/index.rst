@@ -7,7 +7,7 @@ Przegląd literatury
    :maxdepth: 2
    :caption: Contents:
 
-   sprzet/index
+   Sprzet-Dla-Baz-Danych/index
 
 
 

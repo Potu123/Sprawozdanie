@@ -1,4 +1,4 @@
-Sprawozdanie: Projektowanie bazy danych - modele i normalizacja
+Sprawozdanie: Projektowanie bazy danych - modele
 ==========================================================================
 
 :author: Piotr Kotuła, Piotr Pierzchała
@@ -180,13 +180,3 @@ Tabela LogAukcji
      - ...
      - ...
      - ...
-
-Analiza normalizacji
---------------------
-
-Schemat jest zgodny z 3NF:
-- Każda tabela ma klucz główny.
-- Wszystkie atrybuty są bezpośrednio zależne od klucza.
-- Brak redundancji poza LogAukcji (wskazania na ID klientów), co sprzyja JOIN-om.
-
-Ewentualna denormalizacja — np. dodanie imienia i nazwiska do LogAukcji — wymaga uzasadnienia korzyści wydajnościowych.

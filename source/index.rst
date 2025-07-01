@@ -12,7 +12,7 @@ documentation for details.
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    rozdzial1/index
@@ -20,6 +20,5 @@ documentation for details.
    rozdzial3/index
    rozdzial4/index
    rozdzial5/index
-   /./../code/kodPostgreSQL
-   ../code/kodSQLight
+   code/index
 

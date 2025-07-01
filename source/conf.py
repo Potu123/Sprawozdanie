@@ -16,6 +16,8 @@ release = '1.0'
 
 extensions = []
 
+master_doc = 'index'
+
 templates_path = ['_templates']
 exclude_patterns = []
 

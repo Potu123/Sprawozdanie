@@ -18,9 +18,8 @@ documentation for details.
    rozdzial1/index
    rozdzial2/index
    rozdzial3/index
-   rozdzial3/wstep
    rozdzial4/index
    rozdzial5/index
-   ../code/kodPostgreSQL
+   /./../code/kodPostgreSQL
    ../code/kodSQLight
 

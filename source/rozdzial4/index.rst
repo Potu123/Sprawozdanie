@@ -1,3 +1,6 @@
+Analiza Bazy danych i optymalizacja zapytań
+=================================================
+
 Analiza normalizacji
 --------------------
 

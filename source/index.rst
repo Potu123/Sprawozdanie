@@ -21,4 +21,6 @@ documentation for details.
    rozdzial3/wstep
    rozdzial4/index
    rozdzial5/index
+   ../code/kodPostgreSQL
+   ../code/kodSQLight
 

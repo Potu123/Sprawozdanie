@@ -1,9 +1,0 @@
-[submodule "source/rozdzial2/sprzet"]
-	path = source/rozdzial2/sprzet
-	url = git@github.com:Potu123/Sprzet-Dla-Baz-Danych.git
-[submodule "Kod-pythonowy-"]
-	path = Kod-pythonowy-
-	url = git@github.com:Potu123/Kod-pythonowy-.git
-[submodule "source/rozdzial2/Sprzet-Dla-Baz-Danych"]
-	path = source/rozdzial2/Sprzet-Dla-Baz-Danych
-	url = git@github.com:Potu123/Sprzet-Dla-Baz-Danych.git

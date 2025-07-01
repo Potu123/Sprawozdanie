@@ -6,11 +6,13 @@ Sprawozdanie: Projektowanie bazy danych - modele
 Wprowadzenie
 ------------
 
-Prowadzący:  
-Kurs:  
+Prowadzący: Piotr Czaja  
 
-Celem raportu jest przegląd struktury bazy danych aukcyjnej, identyfikacja potencjalnych wąskich gardeł i zaproponowanie strategii optymalizacji.  
-Bazę opisano na podstawie schematu PostgreSQL — jeśli korzystacie z innej implementacji (np. SQLite), wystarczy dostosować tę analizę do własnych nazw typów i mechanizmów.
+Kurs: Bazy Danych 1
+
+Celem raportu jest przegląd struktury bazy danych mającej naśladować małą organizajce aukcyjną, oraz zaproponowanie rozwiązań optymalizujących zapytania do bazy danych.
+Modele Bazy danych zostały zrobione w oparciu o baze daych PostgreSQL.
+
 
 Model Konceptualny
 ------------------------

@@ -4,3 +4,18 @@
 [submodule "source/code"]
 	path = source/code
 	url = git@github.com:Potu123/Kod-pythonowy-.git
+[submodule "source/rozdzial2/Sprawozdanie-dbms"]
+	path = source/rozdzial2/Sprawozdanie-dbms
+	url = https://github.com/Qwerex56/Sprawozdanie-dbms.git
+[submodule "source/rozdzial2/bezpieczenstwo"]
+	path = source/rozdzial2/bezpieczenstwo
+	url = https://github.com/BlazejUl/bezpieczenstwo.git
+[submodule "source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja"]
+	path = source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja
+	url = https://github.com/Broksonn/Wydajnosc_Skalowanie_i_Replikacja.git
+[submodule "source/rozdzial2/repo-wspolne"]
+	path = source/rozdzial2/repo-wspolne
+	url = https://github.com/GrzegorzSzczepanek/repo-wspolne.git
+[submodule "source/rozdzial2/Konfiguracja_baz_danych"]
+	path = source/rozdzial2/Konfiguracja_baz_danych
+	url = https://github.com/Domek182/Konfiguracja_baz_danych.git

@@ -6,7 +6,7 @@ Sprawozdanie: Projektowanie bazy danych - modele
 Wprowadzenie
 ------------
 
-Prowadzący: Piotr Czaja  
+Prowadzący: Dr inż. Piotr Czaja  
 
 Kurs: Bazy Danych 1
 
